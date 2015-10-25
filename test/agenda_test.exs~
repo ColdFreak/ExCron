@@ -1,8 +1,0 @@
-defmodule AgendaTest do
-  use ExUnit.Case
-  doctest Agenda
-
-  test "parsing a schedule string" do
-    
-  end
-end

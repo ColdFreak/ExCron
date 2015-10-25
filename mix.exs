@@ -15,6 +15,7 @@ defmodule Agenda.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [applications: [:logger],
+     registered: [Agenda.Worker],
      mod: {Agenda, []}]
   end
 
@@ -28,6 +29,8 @@ defmodule Agenda.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [
+      {:good_times, "~> 1.0"}
+    ]
   end
 end
