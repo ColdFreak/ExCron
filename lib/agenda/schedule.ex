@@ -48,7 +48,7 @@ defmodule Agenda.Schedule do
       Enum.any?(schedule.month, fn(mon) -> mon == month end)
     ] 
     |> Enum.all?
-    IO.puts "res = #{res}"
+    #IO.puts "res = #{res}"
     res
   end
 

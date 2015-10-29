@@ -5,7 +5,7 @@ defmodule AgendaTest do
   @tag :slow
   test "adding commands as cron and having them executed" do
     pid_list = :erlang.pid_to_list(self)
-    IO.puts "pid_list in test = #{inspect pid_list}"
+    #IO.puts "pid_list in test = #{inspect pid_list}"
     Agenda.add_schedule("* * * * * send(:erlang.list_to_pid(#{inspect pid_list}), :ok)")
     :timer.sleep(61_000)
     assert_received(:ok)
