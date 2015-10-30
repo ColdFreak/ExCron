@@ -30,7 +30,8 @@ defmodule Agenda.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      {:good_times, "~> 1.0"}
+      {:good_times, "~> 1.0"},
+      {:junit_formatter, "~> 0.0.3", only: :test}
     ]
   end
 end
