@@ -1,0 +1,2 @@
+%{"good_times": {:hex, :good_times, "1.0.1"},
+  "junit_formatter": {:hex, :junit_formatter, "0.0.3"}}
