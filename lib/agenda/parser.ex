@@ -6,6 +6,7 @@ defmodule Agenda.Parser do
     ## ["Module.function(:arg2,", ":arg3)"]
     [minute, hour, day_of_month, month, day_of_week | command_bits] = String.split(schedule_string)
     command_string = Enum.join(command_bits)
+    IO.puts "111"
     {:ok, command} = Code.string_to_quoted(command_string)
     parse(minute, hour, day_of_month, month, day_of_week, command)
   end
